@@ -1,0 +1,13 @@
+# Impedir que se pueda ver el listado de contenidos de un directorio
+
+# Si el archivo y la carpeta no existen hacer siguiente reescritura
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+Options All -Indexes
+
+# Url Amigables
+
+RewriteEngine On
+
+RewriteRule ^([-a-zA-Z0-9/]+)$ index.php?ruta=$1
