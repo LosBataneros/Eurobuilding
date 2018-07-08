@@ -4,7 +4,7 @@ class Ruta{
 
 	static public function ctrRuta(){
 
-		return "http://localhost/hotel-eurobuilding/";
+		return "http://localhost/eurobuilding/";
 
 	}
 
